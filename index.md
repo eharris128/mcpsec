@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# MCPSec Research
+# Home
 
 Security research focused on Model Context Protocol (MCP) implementations and AI-assisted development tools.
 
@@ -16,13 +16,13 @@ Security research focused on Model Context Protocol (MCP) implementations and AI
 
 <!-- Buttondown signup form -->
 <form
-  action="https://buttondown.email/api/emails/embed-subscribe/MCPSec"
+  action="https://buttondown.email/api/emails/embed-subscribe/mcpsecurityresearch"
   method="post"
   target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/MCPSec', 'popupwindow')"
+  onsubmit="window.open('https://buttondown.email/mcpsecurityresearch', 'popupwindow')"
   class="embeddable-buttondown-form"
 >
-  <label for="bd-email">Get security research updates:</label>
+  <label for="bd-email">Join the newsletter on securing the agentic future:</label>
   <input type="email" name="email" id="bd-email" placeholder="your@email.com" />
   <input type="submit" value="Subscribe" />
 </form>
