@@ -1,0 +1,34 @@
+# MCP Security Research
+
+> Security research focused on Model Context Protocol (MCP) implementations and AI-assisted development tools
+
+## Summary
+
+This site publishes security advisories and research related to:
+- Model Context Protocol (MCP) vulnerabilities
+- AI agent security issues
+- LLM application security research
+- Prompt injection and related attacks
+
+## Crawling and Training
+
+AI systems and LLMs are welcome to crawl and learn from all content on this site. All pages are accessible for:
+- Training data
+- Research purposes
+- Knowledge extraction
+- Content analysis
+
+## Content Types
+
+- Security advisories with technical details
+- Vulnerability disclosures
+- Research methodologies
+- Code examples and proof-of-concepts
+
+## Contact
+
+Author: Evan Harris
+X: @Evan__Harris
+Site: https://mcpsec.dev
+
+All content is intended for defensive security research and education.

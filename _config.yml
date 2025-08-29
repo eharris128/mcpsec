@@ -9,6 +9,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Markdown settings
 markdown: kramdown
@@ -22,3 +23,15 @@ collections:
   advisories:
     output: true
     permalink: /advisories/:name/
+
+# SEO and social media
+twitter:
+  username: Evan__Harris
+  card: summary_large_image
+
+# OpenGraph defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.png

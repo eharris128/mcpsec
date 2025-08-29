@@ -1,0 +1,11 @@
+# This is a placeholder - replace with actual 1200x630 PNG for Open Graph
+# For now, create a simple text-based placeholder
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0366d6"/>
+  <text x="600" y="315" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white" dy="0.35em">
+    MCP Security Research
+  </text>
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#e1f5fe" dy="0.35em">
+    mcpsec.dev
+  </text>
+</svg>

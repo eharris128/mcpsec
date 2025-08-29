@@ -2,8 +2,6 @@
 layout: home
 ---
 
-# Home
-
 Security research focused on Model Context Protocol (MCP) implementations and AI-assisted development tools.
 
 ## Recent Advisories
