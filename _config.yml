@@ -1,0 +1,25 @@
+title: MCPSec Research
+description: Security Research on Model Context Protocol
+author: MCPSec
+email: contact@mcpsec.dev
+url: "https://mcpsec.dev"
+baseurl: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /blog/:year/:month/:title/
+
+# Collections for different content types
+collections:
+  advisories:
+    output: true
+    permalink: /advisories/:name/
