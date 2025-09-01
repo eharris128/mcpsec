@@ -11,6 +11,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Header navigation
+header_pages:
+  - about.md
+  - advisories/index.html
+
 # Markdown settings
 markdown: kramdown
 highlighter: rouge

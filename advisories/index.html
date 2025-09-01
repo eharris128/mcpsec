@@ -1,0 +1,31 @@
+---
+layout: page
+title: Security Advisories
+permalink: /advisories/
+---
+
+<div class="advisories-list">
+  <p>Security research focused on Model Context Protocol (MCP) implementations and AI-assisted development tools.</p>
+  
+  {% if site.advisories.size > 0 %}
+    <h2>Published Advisories</h2>
+    <ul class="advisory-list">
+      {% for advisory in site.advisories reversed %}
+        <li class="advisory-item">
+          <h3><a href="{{ advisory.url | relative_url }}">{{ advisory.title }}</a></h3>
+          <p class="advisory-meta">
+            <time datetime="{{ advisory.date | date_to_xmlschema }}">{{ advisory.date | date: "%B %d, %Y" }}</time>
+            {% if advisory.categories %}
+              | <span class="categories">{{ advisory.categories | join: ", " }}</span>
+            {% endif %}
+          </p>
+          {% if advisory.excerpt %}
+            <p class="advisory-excerpt">{{ advisory.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p><em>No advisories published yet. Check back soon for security research updates.</em></p>
+  {% endif %}
+</div>

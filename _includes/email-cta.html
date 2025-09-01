@@ -1,0 +1,118 @@
+<!-- Email CTA Component -->
+<div class="email-cta-wrapper">
+  <div class="email-cta">
+    <h3>Stay Ahead of AI Security Threats</h3>
+    <p>Get exclusive insights on AI agent vulnerabilities, MCP security research, and critical advisories delivered to your inbox.</p>
+    
+    <!-- Buttondown newsletter signup form -->
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/mcpsecurityresearch"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/mcpsecurityresearch', 'popupwindow')"
+      class="embeddable-buttondown-form email-cta-form"
+      aria-label="Newsletter subscription form"
+    >
+      <input 
+        type="email" 
+        name="email" 
+        id="bd-email-cta" 
+        placeholder="your@email.com" 
+        required 
+        aria-describedby="email-cta-help"
+      />
+      <input type="submit" value="Subscribe" />
+      <div id="email-cta-help" class="visually-hidden">Enter your email address to subscribe to security research updates</div>
+    </form>
+    
+    <p class="email-cta-privacy">No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<style>
+.email-cta-wrapper {
+  margin: 60px 0 30px 0;
+  padding-top: 40px;
+  border-top: 2px solid #e1e4e8;
+}
+
+.email-cta {
+  background: linear-gradient(135deg, #f6f8fa 0%, #f0f3f6 100%);
+  border: 1px solid #d1d5da;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.email-cta h3 {
+  color: #24292e;
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+}
+
+.email-cta p {
+  color: #586069;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.email-cta-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.email-cta-form input[type="email"] {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 12px 16px;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 44px;
+}
+
+.email-cta-form input[type="submit"] {
+  background: #0366d6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.2s;
+  box-sizing: border-box;
+  height: 44px;
+}
+
+.email-cta-form input[type="submit"]:hover {
+  background: #0256c7;
+}
+
+.email-cta-privacy {
+  font-size: 0.85em;
+  color: #6a737d;
+  margin: 15px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .email-cta-form {
+    flex-direction: column;
+  }
+  
+  .email-cta-form input[type="email"] {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .email-cta-form input[type="submit"] {
+    width: 100%;
+  }
+}
+</style>

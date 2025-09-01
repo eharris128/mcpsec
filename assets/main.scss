@@ -60,3 +60,62 @@ code {
     margin: 10px 0;
   }
 }
+
+// Accessibility helpers
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// Advisory list styling
+.advisories-list {
+  .advisory-list {
+    list-style: none;
+    padding: 0;
+    
+    .advisory-item {
+      border-bottom: 1px solid #e1e4e8;
+      padding: 20px 0;
+      margin: 0;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      h3 {
+        margin: 0 0 10px 0;
+        
+        a {
+          color: #0366d6;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      
+      .advisory-meta {
+        color: #666;
+        font-size: 0.9em;
+        margin: 0 0 10px 0;
+        
+        .categories {
+          font-weight: 500;
+        }
+      }
+      
+      .advisory-excerpt {
+        color: #555;
+        margin: 0;
+      }
+    }
+  }
+}
