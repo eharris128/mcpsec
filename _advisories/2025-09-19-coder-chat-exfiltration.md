@@ -8,6 +8,8 @@ excerpt: "A DNS rebinding vulnerability in Coder's Agent API allows remote attac
 
 **Author:** Evan Harris  
 **Affected Component:** Coder's Agent API  
+**CVE**: CVE-2025-59956  
+**CVSS 3.1 Score**: 6.5 (Medium) - CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N  
 
 # Overview 
 Coder's Agent API is an open source HTTP API for Claude Code, Goose, Aider, Gemini, Amp, and Codex. 
@@ -160,3 +162,4 @@ Shout out to the Coder team for their prompt and professional response in patchi
 ## References
 
   - [Patched Release (v0.4.0)](https://github.com/coder/agentapi/releases/tag/v0.4.0){:target="\_blank"}
+  - [CVE-2025-59956 Details](https://nvd.nist.gov/vuln/detail/CVE-2025-59956){:target="_blank"}
