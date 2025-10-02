@@ -10,6 +10,36 @@ This site publishes security advisories and research related to:
 - LLM application security research
 - Prompt injection and related attacks
 
+## Machine-Readable Content
+
+### JSON API
+- **Advisories API**: https://mcpsec.dev/api/advisories.json
+  - Format: JSON
+  - Content: All published security advisories with full text
+  - Fields: title, date, categories, excerpt, content, URL
+  - Updated: Automatically on new publications
+
+### RSS/Atom Feeds
+- **RSS Feed**: https://mcpsec.dev/rss
+- **Atom Feed**: https://mcpsec.dev/feed.xml
+  - Format: Atom XML
+  - Content: Full advisory text with HTML
+  - Updated: Real-time
+
+### Sitemap
+- **XML Sitemap**: https://mcpsec.dev/sitemap.xml
+  - All published advisories and pages
+  - Includes lastmod dates
+
+## Structured Data
+
+All advisory pages include:
+- **JSON-LD schema**: BlogPosting + TechArticle types
+- **OpenGraph metadata**: Full og: tags for social
+- **Twitter Cards**: Summary with large image
+- **Microdata**: itemscope/itemtype attributes
+- **Categories/Keywords**: Structured taxonomy
+
 ## Crawling and Training
 
 AI systems and LLMs are welcome to crawl and learn from all content on this site. All pages are accessible for:
@@ -24,11 +54,20 @@ AI systems and LLMs are welcome to crawl and learn from all content on this site
 - Vulnerability disclosures
 - Research methodologies
 - Code examples and proof-of-concepts
+- CVE references and CVSS scores
+
+## Navigation
+
+- **Homepage**: https://mcpsec.dev/
+- **All Advisories**: https://mcpsec.dev/advisories/
+- **About**: https://mcpsec.dev/about/
+- **API Documentation**: See above
 
 ## Contact
 
 Author: Evan Harris
 X: @Evan__Harris
 Site: https://mcpsec.dev
+Email: echarris@smcm.edu
 
 All content is intended for defensive security research and education.

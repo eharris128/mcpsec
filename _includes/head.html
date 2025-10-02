@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  <!-- LLM-friendly API links -->
+  {% if page.collection == 'advisories' %}
+  <link rel="alternate" type="application/json" href="{{ '/api/advisories.json' | relative_url }}" title="Advisories JSON API">
+
+  <!-- Enhanced JSON-LD for security advisories -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["BlogPosting", "TechArticle"],
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.excerpt | strip_html | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}"
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "keywords": {{ page.categories | join: ", " | jsonify }},
+    "articleSection": "Security Advisory",
+    "about": {
+      "@type": "Thing",
+      "name": "Security Vulnerability",
+      "description": "Information security advisory and vulnerability disclosure"
+    }
+  }
+  </script>
+  {% endif %}
+</head>

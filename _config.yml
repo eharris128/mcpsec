@@ -33,9 +33,21 @@ twitter:
   username: Evan__Harris
   card: summary_large_image
 
-# OpenGraph defaults
+# Defaults for pages
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/og-image.png
+  - scope:
+      path: "AGENTS.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "DEVELOPMENT.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "SECURITY.md"
+    values:
+      sitemap: false
