@@ -13,7 +13,7 @@ layout: null
     {% for advisory in site.advisories reversed %}
     {
       "id": "{{ advisory.url | replace: '/advisories/', '' | replace: '/', '' }}",
-      "title": "{{ advisory.title | jsonify }}",
+      "title": {{ advisory.title | jsonify }},
       "url": "{{ site.url }}{{ advisory.url }}",
       "date": "{{ advisory.date | date: '%Y-%m-%d' }}",
       "datePublished": "{{ advisory.date | date_to_xmlschema }}",
