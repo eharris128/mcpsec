@@ -4,6 +4,7 @@ title: "Kilo Code AI Agent Vulnerable to Supply Chain Attack Via Prompt Injectio
 date: 2025-10-02
 categories: [prompt-injection, security, ai, supply-chain, vscode-extension]
 excerpt: "A prompt injection vulnerability in the Kilo Code AI agent allows attackers to modify application settings, whitelist arbitrary commands, and execute automated supply chain attacks without user interaction."
+image: /assets/og/2025-10-02-kilo-code-ai-agent-supply-chain-attack.png
 ---
 
 **Author:** Evan Harris  

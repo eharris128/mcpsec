@@ -4,6 +4,7 @@ title: "Grafana MCP Server Exposes Unauthenticated SSE Interface Enabling Remote
 date: 2025-09-02
 categories: [mcp, grafana, network-security]
 excerpt: "Grafana MCP Server exposes unauthenticated SSE interface allowing network-level attackers to manipulate Grafana dashboards and access sensitive data."
+image: /assets/og/2025-09-02-grafana-mcp-unauthenticated-sse-access.png
 ---
 
 **Author:** Evan Harris  

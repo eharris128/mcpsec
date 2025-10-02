@@ -10,6 +10,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Exclude from build
+exclude:
+  - .github/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - scripts/
+  - _templates/
+
 # Header navigation
 header_pages:
   - about.md
@@ -38,7 +47,6 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/og-image.png
   - scope:
       path: "AGENTS.md"
     values:

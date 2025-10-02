@@ -4,6 +4,7 @@ title: "Coder's Agent API Exposes User Chat History Via DNS Rebinding Attack"
 date: 2025-09-19
 categories: [dns-rebinding, security, api, llm]
 excerpt: "A DNS rebinding vulnerability in Coder's Agent API allows remote attackers to exfiltrate a user's entire local message history, which may contain sensitive data like secret keys and intellectual property."
+image: /assets/og/2025-09-19-coder-chat-exfiltration.png
 ---
 
 **Author:** Evan Harris  

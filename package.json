@@ -1,0 +1,15 @@
+{
+  "name": "mcpsec-blog",
+  "version": "1.0.0",
+  "description": "MCP Security Research Blog",
+  "private": true,
+  "scripts": {
+    "generate-og": "node scripts/generate-og-images.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

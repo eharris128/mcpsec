@@ -4,6 +4,7 @@ title: "Unauthorized Crypto Transactions Enabled by thirdweb MCP Server"
 date: 2025-09-03
 categories: [mcp, cryptocurrency, network-security]
 excerpt: "thirdweb MCP Server exposes unauthenticated SSE interface enabling unauthorized cryptocurrency transactions from victims' wallets."
+image: /assets/og/2025-09-03-thirdweb-mcp-unauthorized-transactions.png
 ---
 
 **Author:** Evan Harris  

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, height=630">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: 630px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 80px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            background: #dc2626;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .date {
+            color: #6b7280;
+            font-size: 24px;
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #111827;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 40px;
+            border-top: 3px solid #e5e7eb;
+        }
+
+        .branding {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .site-tagline {
+            font-size: 20px;
+            color: #6b7280;
+        }
+
+        .categories {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            background: #f3f4f6;
+            color: #4b5563;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="header">
+                <div class="badge">Security Advisory</div>
+                <div class="date">{{DATE}}</div>
+            </div>
+
+            <h1 class="title">{{TITLE}}</h1>
+
+            <div class="categories">
+                {{CATEGORIES}}
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="branding">
+                <div class="site-name">mcpsec.dev</div>
+                <div class="site-tagline">AI Security Research</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
