@@ -9,7 +9,9 @@ image: /assets/og/2025-10-02-kilo-code-ai-agent-supply-chain-attack.png
 
 **Author:** Evan Harris  
 **Affected Component:** Kilo Code VS Code Extension  
-**Vulnerable Versions:** Versions prior to the patch in Release v4.88.0
+**Vulnerable Versions:** Versions prior to the patch in Release v4.88.0  
+**CVE:** CVE-2025-11445  
+**CVSS 4.0 Score:** 5.3 (Medium) - `CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P`  
 
 # Overview
 Kilo Code's AI agent can be manipulated via **prompt injection** to automatically modify the application's `settings.json` file. This allows an attacker to whitelist normally disallowed `git` commands (`add`, `commit`, `push`), leading to automated **supply chain attacks** without requiring user approval or interaction.
@@ -117,3 +119,4 @@ A huge thank you to the Kilo Code team for their  rapid response in patching thi
 
 ## References
 - [Patch PR](https://github.com/Kilo-Org/kilocode/pull/2244){:target="\_blank"}
+- [CVE Details](https://nvd.nist.gov/vuln/detail/CVE-2025-11445){:target="\_blank"}
